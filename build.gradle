@@ -3,10 +3,16 @@ plugins {
 }
 
 group = 'geminiapi'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
 repositories {
     mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(18)
+    }
 }
 
 dependencies {
