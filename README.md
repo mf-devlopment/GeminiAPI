@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/mf-devlopment/GeminiAPI.svg)](https://jitpack.io/#mf-devlopment/GeminiAPI)
+
+
 テスト実行時は`test/resources/secret.properties`ファイルを作成し、
 ```properties
 gemini_api_key=YOUR_GEMINI_API_KEY
