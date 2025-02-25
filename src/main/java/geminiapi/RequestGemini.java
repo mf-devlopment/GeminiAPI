@@ -38,7 +38,8 @@ public class RequestGemini {
         .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
         .build();
 
-    try (HttpClient client = HttpClient.newHttpClient()) {
+    try {
+      HttpClient client = HttpClient.newHttpClient();
       HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
       if (response.statusCode() == 200) {
         var body = response.body();
